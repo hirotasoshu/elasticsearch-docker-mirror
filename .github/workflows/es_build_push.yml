@@ -22,8 +22,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images:ghcr.io/hirotasoshu/elasticsearch 
-      -
+          images: |
+            ghcr.io/hirotasoshu/elasticsearch
         name: Login to GHCR
         uses: docker/login-action@v2
         with:
